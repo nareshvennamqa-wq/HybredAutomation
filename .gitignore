@@ -5,7 +5,6 @@ node_modules/
 # Environment and local secrets
 .env
 .env.*
-!.env.example
 
 # Playwright artifacts
 /test-results/

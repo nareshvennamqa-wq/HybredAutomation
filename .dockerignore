@@ -3,7 +3,6 @@ node_modules
 .github
 .env
 .env.*
-!.env.example
 allure-report
 allure-results
 playwright-report

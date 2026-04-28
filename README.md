@@ -49,7 +49,7 @@ npm install
 npx playwright install chromium
 ```
 
-Create a root `.env` file from `.env.example`:
+Create or update the root `.env` file:
 
 ```env
 BASE_URL=https://automationexercise.com
@@ -93,7 +93,7 @@ Notes:
 Recommended Git-ready setup for this project:
 
 - Keep `.env`, Playwright auth state, and generated reports out of version control.
-- Commit `.env.example`, source files, config, and workflow files.
+- Commit source files, config, and workflow files.
 - After Git is installed and available in your shell, initialize and commit:
 
 ```bash
