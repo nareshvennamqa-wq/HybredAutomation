@@ -1,0 +1,29 @@
+
+# Dependencies
+node_modules/
+
+# Environment and local secrets
+.env
+.env.*
+!.env.example
+
+# Playwright artifacts
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+/src/playwright/.auth/
+/src/tests/e2e/.auth/
+
+# Allure artifacts
+/allure-results/
+/allure-report/
+
+# Generated local files
+/generated-testcases.json
+/generated-testcases.txt
+/prepared-testcases.json
+
+# Docker and Git metadata
+.git/

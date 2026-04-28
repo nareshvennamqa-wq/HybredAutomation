@@ -1,0 +1,31 @@
+{
+  "name": "automationexercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test src/tests/e2e/ui",
+    "test:api": "npx playwright test src/tests/e2e/api",
+    "test:db": "npx playwright test src/tests/e2e/db",
+    "allure": "npx playwright test && npx allure-commandline generate allure-results --clean -o allure-report && npx allure-commandline open allure-report",
+    "docker:test": "docker compose run --rm tests",
+    "docker:test:ui": "docker compose run --rm tests npm run test:ui",
+    "docker:test:api": "docker compose run --rm tests npm run test:api",
+    "docker:test:db": "docker compose run --rm tests npm run test:db"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.6.0",
+    "allure-playwright": "^3.6.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.4.0",
+    "dotenv": "^17.3.1"
+  }
+}

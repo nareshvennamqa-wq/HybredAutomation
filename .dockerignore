@@ -1,0 +1,15 @@
+node_modules
+.git
+.github
+.env
+.env.*
+!.env.example
+allure-report
+allure-results
+playwright-report
+test-results
+playwright
+src/tests/e2e/.auth
+generated-testcases.json
+generated-testcases.txt
+prepared-testcases.json

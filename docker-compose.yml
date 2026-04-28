@@ -1,0 +1,16 @@
+services:
+  tests:
+    build:
+      context: .
+    env_file:
+      - .env
+    environment:
+      CI: "true"
+      HEADLESS: "true"
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+    volumes:
+      - ./allure-results:/app/allure-results
+      - ./allure-report:/app/allure-report
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
+    command: npx playwright test
